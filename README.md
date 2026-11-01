@@ -24,22 +24,23 @@ sudo pacman -S libnotify
 ```
 
 If `notify-send` is not present, the app will not be able to show desktop notifications.
+make sure `dotnet` is installed in system
 
 ## Install from source
 
+A published .NET app is not just the `pomo` launcher. It also needs its companion files such as `pomo.dll`, `pomo.runtimeconfig.json`, and the bundled assets folder to live beside it.
+
+For a cleaner install, keep the app in its own folder and expose a small launcher in `/usr/local/bin`:
+
 ```bash
 cd /home/sinch69/dev/pomo
-sudo ./scripts/install.sh
+dotnet publish -c Release -o ./build/install
+sudo mkdir -p /usr/local/lib/pomo
+sudo cp -a ./build/install/. /usr/local/lib/pomo/
+sudo ln -sf /usr/local/lib/pomo/pomo /usr/local/bin/pomo
 ```
 
-Or manually:
-
-```bash
-dotnet publish -c Release
-sudo install -m 755 ./bin/Release/net10.0/publish/pomo /usr/local/bin/pomo
-```
-
-Once installed, you can run:
+This keeps the published app and its assets together in `/usr/local/lib/pomo`, while still making the `pomo` command available from your shell. Then you can run:
 
 ```bash
 pomo reg
