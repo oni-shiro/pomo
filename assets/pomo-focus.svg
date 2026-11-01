@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="Pomo focus icon">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ff6a5c"/>
+      <stop offset="100%" stop-color="#d63b2f"/>
+    </linearGradient>
+    <linearGradient id="inner" x1="0" x2="1">
+      <stop offset="0%" stop-color="#fff5f3"/>
+      <stop offset="100%" stop-color="#ffd8d3"/>
+    </linearGradient>
+  </defs>
+  <circle cx="128" cy="128" r="110" fill="url(#bg)"/>
+  <circle cx="128" cy="128" r="84" fill="url(#inner)" opacity="0.9"/>
+  <circle cx="128" cy="128" r="68" fill="none" stroke="#a92f2d" stroke-width="8"/>
+  <path d="M128 72 L128 128 L170 154" fill="none" stroke="#a92f2d" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="128" cy="128" r="12" fill="#a92f2d"/>
+  <path d="M88 44 C95 38, 102 30, 118 27" fill="none" stroke="#fff1ef" stroke-width="10" stroke-linecap="round"/>
+  <path d="M182 44 C176 31, 168 22, 150 18" fill="none" stroke="#fff1ef" stroke-width="10" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="Pomo break icon">
+  <defs>
+    <linearGradient id="bg2" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#4aa7ff"/>
+      <stop offset="100%" stop-color="#2d7ae8"/>
+    </linearGradient>
+    <linearGradient id="inner2" x1="0" x2="1">
+      <stop offset="0%" stop-color="#edf7ff"/>
+      <stop offset="100%" stop-color="#cfe7ff"/>
+    </linearGradient>
+  </defs>
+  <circle cx="128" cy="128" r="110" fill="url(#bg2)"/>
+  <circle cx="128" cy="128" r="84" fill="url(#inner2)" opacity="0.95"/>
+  <path d="M82 108h92c22 0 40 18 40 40 0 24-18 42-42 42h-88c-24 0-42-18-42-42 0-22 18-40 40-40z" fill="none" stroke="#2054bd" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M104 103 V86 a24 24 0 0 1 48 0 v17" fill="none" stroke="#2054bd" stroke-width="10" stroke-linecap="round"/>
+  <path d="M154 88h18c10 0 18 8 18 18v6" fill="none" stroke="#2054bd" stroke-width="10" stroke-linecap="round"/>
+  <path d="M74 138h108" stroke="#2054bd" stroke-width="10" stroke-linecap="round"/>
+  <path d="M94 168h72" stroke="#2054bd" stroke-width="10" stroke-linecap="round"/>
+</svg>

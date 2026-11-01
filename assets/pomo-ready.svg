@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="Pomo ready icon">
+  <defs>
+    <linearGradient id="bg3" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#3ecf8e"/>
+      <stop offset="100%" stop-color="#1a9b69"/>
+    </linearGradient>
+    <linearGradient id="inner3" x1="0" x2="1">
+      <stop offset="0%" stop-color="#edfff7"/>
+      <stop offset="100%" stop-color="#cdf5e1"/>
+    </linearGradient>
+  </defs>
+  <circle cx="128" cy="128" r="110" fill="url(#bg3)"/>
+  <circle cx="128" cy="128" r="84" fill="url(#inner3)" opacity="0.95"/>
+  <path d="M86 132 L116 162 L174 96" fill="none" stroke="#146f52" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="128" cy="128" r="68" fill="none" stroke="#146f52" stroke-width="8"/>
+  <path d="M92 66c18-12 32-18 36-18 18 12 26 14 42 10" fill="none" stroke="#edfff7" stroke-width="10" stroke-linecap="round"/>
+</svg>
