@@ -32,8 +32,8 @@ A published .NET app is not just the `pomo` launcher. It also needs its companio
 
 For a cleaner install, keep the app in its own folder and expose a small launcher in `/usr/local/bin`:
 
+in project root : 
 ```bash
-cd /home/sinch69/dev/pomo
 dotnet publish -c Release -o ./build/install
 sudo mkdir -p /usr/local/lib/pomo
 sudo cp -a ./build/install/. /usr/local/lib/pomo/
