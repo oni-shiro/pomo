@@ -6,11 +6,10 @@ public sealed class NotificationService
 {
     private static readonly string[] PreferredIcons =
     [
-        "/usr/share/icons/hicolor/scalable/apps/gnome-clocks.svg",
-        "/usr/share/icons/hicolor/scalable/apps/clock.svg",
-        "/usr/share/icons/hicolor/256x256/apps/gnome-clocks.png",
-        "/usr/share/icons/hicolor/256x256/apps/clock.png",
-        "/usr/share/icons/hicolor/256x256/apps/org.gnome.clocks.png"
+        "timer",
+        "clock",
+        "appointment-soon",
+        "dialog-information"
     ];
 
     public async Task SendAsync(
@@ -25,6 +24,7 @@ public sealed class NotificationService
     {
         var resolvedIcon = ResolveIcon(icon);
 
+        //Notify-Send spec : https://man.archlinux.org/man/notify-send.1.en
         var startInfo = new ProcessStartInfo
         {
             FileName = "notify-send",
@@ -91,11 +91,11 @@ public sealed class NotificationService
             return defaultBundled;
         }
 
-        foreach (var iconPath in PreferredIcons)
+        foreach (var iconName in PreferredIcons)
         {
-            if (File.Exists(iconPath))
+            if (!string.IsNullOrWhiteSpace(iconName))
             {
-                return iconPath;
+                return iconName;
             }
         }
 

@@ -31,8 +31,9 @@ if (arg == "close")
 {
     try
     {
+        // Close Client
         using var client = new NamedPipeClientStream(
-            ".",
+            ".", // localhost
             PipeName,
             PipeDirection.Out);
 
@@ -132,6 +133,7 @@ static async Task CheckStatusAsync()
 {
     try
     {
+        // Status Client
         using var client = new NamedPipeClientStream(
             ".",
             PipeName,
@@ -239,6 +241,7 @@ static async Task RunPomodoroAsync(
     }
 }
 
+// Actual Listner from the process to recive commands from Clients
 static async Task ListenForCloseAsync(
     string pipeName,
     CancellationTokenSource cts)
